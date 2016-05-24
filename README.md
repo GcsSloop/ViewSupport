@@ -6,9 +6,22 @@
 
 ### Weibo: [@GcsSloop](http://weibo.com/GcsSloop)
 
-This is a Library for View and CustomView，it has some tools can help you operate view or help you custom view easily.
+This is a library for View and CustomView，it has some tools can help you operate view or help you custom view easily.
 
 *****
+
+## Tools list
+
+you can click the tools name to see the source.
+
+Utils           | Summary
+----------------|----------------------------------
+CanvasAidUtils  | Canvas Aid util， you can use it draw a coordinate system to help you check the view position.
+DensityUtils    | A utils of screen density. it can help you convert the different unit. <br/> *E.g: dp -> px  ps->dp sp->px px->sp*
+MathUtils       | A Math utils, It can help you make some common calculations. <br/> *E.g: Get the distance between two points; angle2Radian; radian2Angle and others*
+ViewUtils       | Utils for view. it can help you measure view, if you want get the view size before it not measured. or you can use it set view margin on code.
+
+
 
 ## Get it
 
