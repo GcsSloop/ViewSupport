@@ -6,7 +6,7 @@
 
 ### 微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-View支持包，可以帮助你快速的自定义View，以及控制View状态。
+View支持包，可以帮助你快速的自定义View。
 
 *****
 
@@ -26,7 +26,7 @@ ViewUtils       | 查看 | 视图工具， 封装了一些与视图相关等内�
 
 #### Gradle:
 
-**Step 1. 添加JitPack仓库e**
+**Step 1. 添加JitPack仓库**
 
 在当前项目等根目录下的 `build.gradle` 文件中添加如下内容:
 
