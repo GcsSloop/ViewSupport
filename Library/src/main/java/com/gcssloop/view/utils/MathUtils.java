@@ -4,9 +4,14 @@ import android.graphics.Point;
 import android.graphics.PointF;
 
 /**
+ * A Math utils, It can help you make some common calculations.
+ * <p/>
  * Author: GcsSloop
+ * <p/>
  * Created Date: 16/5/24
+ * <p/>
  * Copyright (C) 2016 GcsSloop.
+ * <p/>
  * GitHub: https://github.com/GcsSloop
  */
 public class MathUtils {

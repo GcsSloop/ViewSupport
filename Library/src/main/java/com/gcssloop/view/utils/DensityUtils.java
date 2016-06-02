@@ -4,12 +4,17 @@ import android.content.Context;
 
 /**
  * A utils of screen density.
+ * <p/>
  * it can help you convert the different unit.
+ * <p/>
  * E.g: dp -> px  ps->dp sp->px px->sp
- * <p>
+ * <p/>
  * Author: GcsSloop
+ * <p/>
  * Created Date: 16/5/24
+ * <p/>
  * Copyright (C) 2016 GcsSloop.
+ * <p/>
  * GitHub: https://github.com/GcsSloop
  */
 public class DensityUtils {

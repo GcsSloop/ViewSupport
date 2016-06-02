@@ -4,10 +4,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Utils about view.
+ * Utils for view.
+ * <p/>
  * Author: GcsSloop
+ * <p/>
  * Created Date: 16/5/19
+ * <p/>
  * Copyright (C) 2016 GcsSloop.
+ * <p/>
  * GitHub: https://github.com/GcsSloop
  */
 public class ViewUtils {

@@ -8,9 +8,13 @@ import android.view.View;
 
 /**
  * This view have some method and field can help you custom view.
+ * <p/>
  * Author: GcsSloop
+ * <p/>
  * Created Date: 16/5/18
+ * <p/>
  * Copyright (C) 2016 GcsSloop.
+ * <p/>
  * GitHub: https://github.com/GcsSloop
  */
 public class CustomView extends View {
