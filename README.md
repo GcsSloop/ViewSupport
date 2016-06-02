@@ -44,7 +44,7 @@ Add it in your root build.gradle at the end of repositories:
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.0.2'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.0.3'
 	}
 ```
 
