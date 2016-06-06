@@ -14,6 +14,14 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 
 *****
 
+## 主要功能
+
+封装一些与视图相关的工具类和辅助工具类，让自定义View开发更加优雅。
+
+例如绘制一个辅助的坐标系帮助检查视图位置：
+
+<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f4i5aypzo9j30dw0nhmxt.jpg" width=300 />
+
 ## 工具列表
 
 >
