@@ -38,7 +38,8 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 
 ## 文档
 
-[点击这里查看文档](http://gcssloop.github.io/doc/viewsupport/cn/index.html)
+* [点击这里查看文档](http://gcssloop.github.io/doc/viewsupport/cn/index.html)
+* [点击这里查看Wiki](https://github.com/GcsSloop/ViewSupport/wiki)
 
 ## 如何添加该开源库
 
