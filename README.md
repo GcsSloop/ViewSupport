@@ -16,6 +16,9 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 
 ## 工具列表
 
+>
+**PS: 点击工具名称查看源码，点击Wiki查看简介。**
+
 工具            | Wiki |简介
 ----------------|------|----------------------------
 [CustomView](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/CustomView.java)                | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CustomView)     | 自定义View基类，帮助你节省部分代码
@@ -25,7 +28,9 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 [MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils)      | 数学工具， 封装一些数学算法，例如: 获取两点只见距离，获取线段上某一点的位置， 获取线段与水平线夹角 等
 [ViewUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/ViewUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ViewUtils)      | 视图工具， 封装了一些与视图相关等内容，如 手动测量视图大小， 为视图动态设置margin 等
 
+## 文档
 
+[点击这里查看文档](http://gcssloop.github.io/doc/viewsupport/cn/index.html)
 
 ## 如何添加该开源库
 
