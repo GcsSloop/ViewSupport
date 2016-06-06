@@ -1,6 +1,5 @@
 package com.gcssloop.view.utils;
 
-import android.app.VoiceInteractor;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
@@ -18,22 +17,34 @@ import android.support.annotation.NonNull;
  */
 public class CanvasUtils {
 
-    private Canvas mCanvas;
 
-    public CanvasUtils(@NonNull Canvas canvas) {
-        mCanvas = canvas;
+    private CanvasUtils() {
     }
 
-    public void drawLine(Point p1, Point p2, Paint paint) {
-        mCanvas.save();
-        mCanvas.drawLine(p1.x, p1.y, p2.x, p2.y, paint);
-        mCanvas.restore();
+    /**
+     * draw a line by tow point
+     *
+     * @param p1    point
+     * @param p2    point
+     * @param paint paint
+     */
+    public static void drawLine(Point p1, Point p2, Canvas canvas, Paint paint) {
+        canvas.save();
+        canvas.drawLine(p1.x, p1.y, p2.x, p2.y, paint);
+        canvas.restore();
     }
 
-    public void drawLine(PointF p1, PointF p2, Paint paint) {
-        mCanvas.save();
-        mCanvas.drawLine(p1.x, p1.y, p2.x, p2.y, paint);
-        mCanvas.restore();
+    /**
+     * draw a line by tow point
+     *
+     * @param p1    point
+     * @param p2    point
+     * @param paint paint
+     */
+    public void drawLine(PointF p1, PointF p2, Canvas canvas, Paint paint) {
+        canvas.save();
+        canvas.drawLine(p1.x, p1.y, p2.x, p2.y, paint);
+        canvas.restore();
     }
 
 }

@@ -44,8 +44,6 @@ public class CustomView extends View {
      */
     protected TextPaint mDefaultTextPaint = new TextPaint();
 
-    private int mSettedWidth, mSettedHeight;
-
 
     public CustomView(Context context) {
         super(context, null);
