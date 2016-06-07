@@ -32,8 +32,8 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 [CustomView](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/CustomView.java)                | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CustomView)     | 自定义View基类，帮助你节省部分代码
 [CanvasAidUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasAidUtils.java)  | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasAidUtils) | Canvas辅助工具，你可以用它绘制坐标系来帮助你检查视图的位置，并在完成之后移除该坐标系。
 [CanvasUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasUtils.java)        | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasUtils)    | Canvas绘图工具，封装了一些Canvas没有提供的方法，目前只能用来画一条线。
-[DensityUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/DensityUtils.java)      | [查看](https://github.com/GcsSloop/ViewSupport/wiki/DensityUtils)   | 密度工具， 根据设备进行如下单位转换: sp -> px, px -> sp, dp -> px, px ->dp
-[MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils)      | 数学工具， 封装一些数学算法，例如: 获取两点只见距离，获取线段上某一点的位置， 获取线段与水平线夹角 等
+[DensityUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/DensityUtils.java)      | [查看](https://github.com/GcsSloop/ViewSupport/wiki/DensityUtils)   | 密度工具， 根据设备进行如下单位转换: sp -> px, px -> sp, dp -> px, px -> dp
+[MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils)      | 数学工具， 封装一些数学算法，例如: 获取两点之间的距离，获取线段上某一点的位置， 获取线段与水平线夹角 等
 [ViewUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/ViewUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ViewUtils)      | 视图工具， 封装了一些与视图相关等内容，如 手动测量视图大小， 为视图动态设置margin 等
 
 ## 文档
