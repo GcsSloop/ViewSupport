@@ -62,7 +62,7 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.0.4'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.0.6'
 	}
 ```
 
