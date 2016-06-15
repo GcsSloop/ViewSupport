@@ -5,13 +5,13 @@ import android.graphics.PointF;
 
 /**
  * A Math utils, It can help you make some common calculations.
- * <p/>
+ * <p>
  * Author: GcsSloop
- * <p/>
+ * <p>
  * Created Date: 16/5/24
- * <p/>
+ * <p>
  * Copyright (C) 2016 GcsSloop.
- * <p/>
+ * <p>
  * GitHub: https://github.com/GcsSloop
  */
 public class MathUtils {
@@ -28,6 +28,13 @@ public class MathUtils {
      */
     public static int getDistance(PointF A, PointF B) {
         return (int) Math.sqrt(Math.pow(A.x - B.x, 2) + Math.pow(A.y - B.y, 2));
+    }
+
+    /**
+     * Get the distance between two points.
+     */
+    public static int getDistance(float x1, float y1, float x2, float y2) {
+        return (int) Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
 
     /**
