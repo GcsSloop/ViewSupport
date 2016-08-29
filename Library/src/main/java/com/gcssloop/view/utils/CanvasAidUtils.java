@@ -49,9 +49,20 @@ public class CanvasAidUtils {
     }
 
 
+    /**
+     * 标注为废弃
+     * @param lenX x坐标轴长度
+     * @param lenY y坐标轴长度
+     * @param lineWidth 坐标轴宽度
+     * @param lineColor 坐标轴颜色
+     * @deprecated 标注为废弃,后续版本中可能移除该方法,请使用 {@link #setCoordinateLen(int, int, int, int)}. {@link #setLineWidth(int)} 和 {@link #setLineColor(int)} 来代替.
+     */
+    @Deprecated
     public static void setStyle(int lenX, int lenY, int lineWidth, int lineColor) {
         LEN_X = lenX;
         LEN_Y = lenY;
+        LEN_NX = lenX;
+        LEN_NY = lenY;
         LINE_WIDTH = lineWidth;
         LINE_COLOR = lineColor;
     }
@@ -60,7 +71,7 @@ public class CanvasAidUtils {
      * 设置坐标轴长度
      * @param lenX x坐标轴长度
      * @param lenY y坐标轴长度
-     * @deprecated 被标记为删除, 后续版本中可能移除该方法, 请使用 {@link #setCoordinateLen(int, int, int, int)}
+     * @deprecated 被标记为删除, 后续版本中可能移除该方法, 请使用 {@link #setCoordinateLen(int, int, int, int)}代替
      */
     public static void setLen(int lenX, int lenY) {
         LEN_X = lenX;
@@ -95,7 +106,7 @@ public class CanvasAidUtils {
      * 绘制坐标系.
      * 修复名称,标记为删除,可能在几个版本后移除该方法.
      * @param canvas 画布
-     * @deprecated 被标记为删除,后续版本中可能移除该方法,请使用 {@link #drawCoordinateSpace(Canvas)}
+     * @deprecated 被标记为删除,后续版本中可能移除该方法,请使用 {@link #drawCoordinateSpace(Canvas)}代替
      */
     @Deprecated
     public static void drawCoordinateSystem(Canvas canvas) {
