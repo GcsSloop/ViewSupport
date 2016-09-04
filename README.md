@@ -64,7 +64,7 @@
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.1.0'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.2.0'
 	}
 ```
 
