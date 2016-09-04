@@ -6,9 +6,11 @@
 
 ### 微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-Android的自定义View有自己的一套流程，按照这个流程，你可以创造出各式各样的炫酷的自定义View，然而，做多了你就会发现其中存在很多重复的工作，例如 总是需要在 onSizeChanged 函数中获取到View的大小存储进全局变量中，总是需要创建一个画笔等。
+该开源库主要作用为简化自定义View流程，例如，自定义View继承 `CusTomView` 可以自动获取View大小和一个默认画笔。
 
-除此之外，你也可能会遇到一些其它绘图中的问题，如： 测量距离，角度弧度转换 等一些常用的操作，虽然这些东西写起来并不是多么的困难，但偶尔弄错了公式可能会造成一些不必要的麻烦，所以我将这些工具整理成了一个工具包，方便以后优雅快速的开发自定义View。
+同时，它也提供了一些辅助工具，例如，用 `CanvasAidUtils` 绘制一个临时坐标系用于检查视图位置。以及测量距离，角度弧度转换 等一些常用的内容，总而言之，这个开源库到作用就是为了优雅快速的制作自定义View。
+
+更多信息可以查看下面表格。
 
 如果你对此有什么比较好的建议，欢迎提交 Issues 来告诉我。
 
@@ -62,7 +64,7 @@ Android的自定义View有自己的一套流程，按照这个流程，你可以
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.0.9'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.1.0'
 	}
 ```
 
