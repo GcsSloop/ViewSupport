@@ -17,7 +17,7 @@
  * Weibo  :  http://weibo,com/GcsSloop
  * Blog     :  http://www.gcssloop.com
  *
- * Last modify $2016-09-03 23:07:52
+ * Last modify $2016-09-09 21:38:09
  */
 
 package com.gcssloop.view.utils;
@@ -29,29 +29,141 @@ import android.graphics.Point;
 
 public class CanvasAidUtils {
 
+    // field for 2D and 3D
     private static boolean isDrawAid = true;
-
     private static Paint mPaint;
-    private static int LEN_X = 500;
-    private static int LEN_NX = 0;
-    private static int LEN_Y = 700;
-    private static int LEN_NY = 0;
-    private static int LEN_Z = 400;
-    private static int LEN_NZ = 0;
-
-    private static int LINE_WIDTH = 5;
-    private static int LINE_COLOR = Color.GRAY;
+    private static int mLineWidth = 5;
+    private static int mLineColor = Color.GRAY;
 
     private static int Cap_Axis_Distance = 15;
     private static int Cap_Head_Distance = 30;
 
-    private static Point XHead, XTail, YHead, YTail, ZHead, ZTail;
-    private static Point XCap1, XCap2, YCap1, YCap2, ZCap1, ZCap2;
+
+    // 2D
+    private static int XAxisPosLen_2D = 500;   // X axis positive length
+    private static int XAxisNegLen_2D = 0;     // X axis negative length
+    private static int YAxisPosLen_2D = 700;   // Y axis positive length
+    private static int YAxisNegLen_2D = 0;     // Y axis negative length
+
+    private static Point XHead_2D, XTail_2D, YHead_2D, YTail_2D;
+    private static Point XCap1_2D, XCap2_2D, YCap1_2D, YCap2_2D;
+
+
+    // 3D
+    private static int XAxisPosLen_3D = 400;   // X axis positive length
+    private static int XAxisNegLen_3D = 400;   // X axis negative length
+    private static int YAxisPosLen_3D = 500;   // Y axis positive length
+    private static int YAxisNegLen_3D = 500;   // Y axis negative length
+    private static int ZAxisPosLen_3D = 300;   // Z axis positive length
+    private static int ZAxisNegLen_3D = 400;   // Z axis negative length
+
+    private static Point XHead_3D, XTail_3D, YHead_3D, YTail_3D, ZHead_3D, ZTail_3D;
+    private static Point XCap1_3D, XCap2_3D, YCap1_3D, YCap2_3D, ZCap1_3D, ZCap2_3D;
 
 
     private CanvasAidUtils() {
     }
 
+
+    /**
+     * draw 2D Coordinate Space.
+     *
+     * @param canvas Canvas
+     */
+    public static void draw2DCoordinateSpace(Canvas canvas) {
+        if (!isDrawAid) return;
+
+        initPaint();
+        init2DPoint();
+
+        canvas.save();
+
+        CanvasUtils.drawLine(XHead_2D, XTail_2D, canvas, mPaint);
+        CanvasUtils.drawLine(XHead_2D, XCap1_2D, canvas, mPaint);
+        CanvasUtils.drawLine(XHead_2D, XCap2_2D, canvas, mPaint);
+
+        CanvasUtils.drawLine(YHead_2D, YTail_2D, canvas, mPaint);
+        CanvasUtils.drawLine(YHead_2D, YCap1_2D, canvas, mPaint);
+        CanvasUtils.drawLine(YHead_2D, YCap2_2D, canvas, mPaint);
+
+        canvas.restore();
+    }
+
+    /**
+     * draw 3D Coordinate Space
+     *
+     * @param canvas Canvas
+     */
+    public static void draw3DCoordinateSpace(Canvas canvas) {
+        if (!isDrawAid) return;
+
+        initPaint();
+        init3DPoint();
+
+        canvas.save();
+
+        CanvasUtils.drawLine(XHead_3D, XTail_3D, canvas, mPaint);
+        CanvasUtils.drawLine(XHead_3D, XCap1_3D, canvas, mPaint);
+        CanvasUtils.drawLine(XHead_3D, XCap2_3D, canvas, mPaint);
+
+        CanvasUtils.drawLine(YHead_3D, YTail_3D, canvas, mPaint);
+        CanvasUtils.drawLine(YHead_3D, YCap1_3D, canvas, mPaint);
+        CanvasUtils.drawLine(YHead_3D, YCap2_3D, canvas, mPaint);
+
+        CanvasUtils.drawLine(ZHead_3D, ZTail_3D, canvas, mPaint);
+        CanvasUtils.drawLine(ZHead_3D, ZCap1_3D, canvas, mPaint);
+        CanvasUtils.drawLine(ZHead_3D, ZCap2_3D, canvas, mPaint);
+
+        canvas.restore();
+    }
+
+    private static void initPaint() {
+        mPaint = new Paint();
+        mPaint.setAntiAlias(true);
+        mPaint.setColor(mLineColor);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(mLineWidth);
+        mPaint.setStrokeCap(Paint.Cap.ROUND);
+    }
+
+    private static void init2DPoint() {
+
+        XHead_2D = new Point(+XAxisPosLen_2D, 0);
+        XTail_2D = new Point(-XAxisNegLen_2D, 0);
+        XCap1_2D = new Point(XAxisPosLen_2D - Cap_Head_Distance, +Cap_Axis_Distance);
+        XCap2_2D = new Point(XAxisPosLen_2D - Cap_Head_Distance, -Cap_Axis_Distance);
+
+        YHead_2D = new Point(0, +YAxisPosLen_2D);
+        YTail_2D = new Point(0, -YAxisNegLen_2D);
+        YCap1_2D = new Point(+Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
+        YCap2_2D = new Point(-Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
+    }
+
+    private static void init3DPoint() {
+
+        XHead_3D = new Point(+XAxisPosLen_3D, 0);
+        XTail_3D = new Point(-XAxisNegLen_3D, 0);
+        XCap1_3D = new Point(XAxisPosLen_3D - Cap_Head_Distance, +Cap_Axis_Distance);
+        XCap2_3D = new Point(XAxisPosLen_3D - Cap_Head_Distance, -Cap_Axis_Distance);
+
+        YHead_3D = new Point(0, -YAxisPosLen_3D);
+        YTail_3D = new Point(0, +YAxisNegLen_3D);
+        YCap1_3D = new Point(+Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
+        YCap2_3D = new Point(-Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
+
+        int zl = convert_3D_to_2D(ZAxisPosLen_3D);
+        int nzl = convert_3D_to_2D(ZAxisNegLen_3D);
+        int CAD = convert_3D_to_2D(Cap_Axis_Distance);
+        int CHD = convert_3D_to_2D(Cap_Head_Distance);
+        ZHead_3D = new Point(zl, -zl);
+        ZTail_3D = new Point(-nzl, nzl);
+        ZCap1_3D = new Point(ZHead_3D.x - CHD - CAD, ZHead_3D.y + CHD - CAD);
+        ZCap2_3D = new Point(ZHead_3D.x - CHD + CAD, ZHead_3D.y + CHD + CAD);
+    }
+
+    private static int convert_3D_to_2D(int l) {
+        return l * 3 / 4;
+    }
 
     public static boolean isDrawAid() {
         return isDrawAid;
@@ -63,146 +175,78 @@ public class CanvasAidUtils {
 
 
     /**
-     * 设置2D坐标系坐标轴长度(正负轴等长)
+     * set 2D axis length
      *
-     * @param lenX
-     * @param lenY
+     * @param lenX x axis length
+     * @param lenY y axis length
      */
-    public static void set2DCoordinateLen(int lenX, int lenY) {
-        LEN_X = LEN_NX = lenX;
-        LEN_Y = LEN_NY = lenY;
+    public static void set2DAxisLength(int lenX, int lenY) {
+        XAxisPosLen_2D = XAxisNegLen_2D = lenX / 2;
+        YAxisPosLen_2D = YAxisNegLen_2D = lenY / 2;
     }
 
     /**
-     * 设置2D坐标系坐标轴长度(正负轴分别设置)
+     * set 2D axis length
      *
-     * @param lenX  x正坐标轴长度.
-     * @param lenNX x负坐标轴长度.
-     * @param lenY  y正坐标轴长度.
-     * @param lenNY y负坐标轴长度.
+     * @param lenPX x axis positive length
+     * @param lenNX x axis negative length
+     * @param lenPY y axis positive length
+     * @param lenNY y axis negative length
      */
-    public static void set2DCoordinateLen(int lenX, int lenNX, int lenY, int lenNY) {
-        LEN_X = lenX;
-        LEN_Y = lenY;
-        LEN_NX = lenNX;
-        LEN_NY = lenNY;
+    public static void set2DAxisLength(int lenPX, int lenNX, int lenPY, int lenNY) {
+        XAxisPosLen_2D = lenPX;
+        YAxisPosLen_2D = lenPY;
+        XAxisNegLen_2D = lenNX;
+        YAxisNegLen_2D = lenNY;
     }
 
     /**
-     * 设置3D坐标系坐标轴长度(正负轴等长)
+     * set 3D axis length
      *
-     * @param lenX  x正坐标轴长度.
-     * @param lenY  y正坐标轴长度.
-     * @param lenZ  z正坐标轴长度.
+     * @param lenX x axis length
+     * @param lenY y axis length
+     * @param lenZ z axis length
      */
-    public static void set3DCoordinateLen(int lenX, int lenY, int lenZ) {
-        LEN_X = LEN_NX = lenX;
-        LEN_Y = LEN_NY = lenY;
-        LEN_Z = LEN_NZ = lenZ;
+    public static void set3DAxisLength(int lenX, int lenY, int lenZ) {
+        XAxisPosLen_3D = XAxisNegLen_3D = lenX / 2;
+        YAxisPosLen_3D = YAxisNegLen_3D = lenY / 2;
+        ZAxisPosLen_3D = ZAxisNegLen_3D = lenZ / 2;
     }
 
     /**
-     * 设置3D坐标系坐标轴长度(正负轴分别设置)
+     * set 3D axis length
      *
-     * @param lenX  x正坐标轴长度.
-     * @param lenNX x负坐标轴长度.
-     * @param lenY  y正坐标轴长度.
-     * @param lenNY y负坐标轴长度.
-     * @param lenZ  z正坐标轴长度.
-     * @param lenNZ z负坐标轴长度.
+     * @param lenPX x axis positive length
+     * @param lenNX x axis negative length
+     * @param lenPY y axis positive length
+     * @param lenNY y axis negative length
+     * @param lenPZ z axis positive length
+     * @param lenNZ z axis negative length
      */
-    public static void set3DCoordinateLen(int lenX, int lenNX, int lenY, int lenNY, int lenZ, int lenNZ) {
-        LEN_X = lenX;
-        LEN_Y = lenY;
-        LEN_Z = lenZ;
-        LEN_NX = lenNX;
-        LEN_NY = lenNY;
-        LEN_NZ = lenNZ;
-    }
-
-    public static void setLineWidth(int lineWidth) {
-        LINE_WIDTH = lineWidth;
-    }
-
-    public static void setLineColor(int lineColor) {
-        LINE_COLOR = lineColor;
+    public static void set3DAxisLength(int lenPX, int lenNX, int lenPY, int lenNY, int lenPZ, int lenNZ) {
+        XAxisPosLen_3D = lenPX;
+        YAxisPosLen_3D = lenPY;
+        ZAxisPosLen_3D = lenPZ;
+        XAxisNegLen_3D = lenNX;
+        YAxisNegLen_3D = lenNY;
+        ZAxisNegLen_3D = lenNZ;
     }
 
     /**
-     * 绘制2D坐标空间.
+     * set axis line width
      *
-     * @param canvas 画布
+     * @param width width
      */
-    public static void draw2DCoordinateSpace(Canvas canvas) {
-        if (!isDrawAid) return;
-
-        initPaint();
-        initPoint();
-
-        canvas.save();
-
-        CanvasUtils.drawLine(XHead, XTail, canvas, mPaint);
-        CanvasUtils.drawLine(XHead, XCap1, canvas, mPaint);
-        CanvasUtils.drawLine(XHead, XCap2, canvas, mPaint);
-
-        CanvasUtils.drawLine(YHead, YTail, canvas, mPaint);
-        CanvasUtils.drawLine(YHead, YCap1, canvas, mPaint);
-        CanvasUtils.drawLine(YHead, YCap2, canvas, mPaint);
-
-        canvas.restore();
+    public static void setLineWidth(int width) {
+        CanvasAidUtils.mLineWidth = width;
     }
 
     /**
-     * 绘制3D坐标空间
+     * set axis line color
      *
-     * @param canvas 画布
+     * @param color
      */
-    public static void draw3DCoordinateSpace(Canvas canvas) {
-        if (!isDrawAid) return;
-
-        draw2DCoordinateSpace(canvas);
-
-        canvas.save();
-
-        CanvasUtils.drawLine(ZHead, ZTail, canvas, mPaint);
-        CanvasUtils.drawLine(ZHead, ZCap1, canvas, mPaint);
-        CanvasUtils.drawLine(ZHead, ZCap2, canvas, mPaint);
-
-        canvas.restore();
-    }
-
-    private static void initPaint() {
-        mPaint = new Paint();
-        mPaint.setAntiAlias(true);
-        mPaint.setColor(LINE_COLOR);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(LINE_WIDTH);
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-    }
-
-    private static void initPoint() {
-
-        XHead = new Point(+LEN_X, 0);
-        XTail = new Point(-LEN_NX, 0);
-        XCap1 = new Point(LEN_X - Cap_Head_Distance, +Cap_Axis_Distance);
-        XCap2 = new Point(LEN_X - Cap_Head_Distance, -Cap_Axis_Distance);
-
-        YHead = new Point(0, +LEN_Y);
-        YTail = new Point(0, -LEN_NY);
-        YCap1 = new Point(+Cap_Axis_Distance, LEN_Y - Cap_Head_Distance);
-        YCap2 = new Point(-Cap_Axis_Distance, LEN_Y - Cap_Head_Distance);
-
-        int zl = convert_3D_to_2D(LEN_Z);
-        int nzl = convert_3D_to_2D(LEN_NZ);
-        int CAD = convert_3D_to_2D(Cap_Axis_Distance);
-        int CHD = convert_3D_to_2D(Cap_Head_Distance);
-        ZHead = new Point(-zl, zl);
-        ZTail = new Point(nzl, -nzl);
-        ZCap1 = new Point(ZHead.x + CHD - CAD, ZHead.y - CHD - CAD);
-        ZCap2 = new Point(ZHead.x + CHD + CAD, ZHead.y - CHD + CAD);
-    }
-
-    private static int convert_3D_to_2D(int l) {
-        return l * 3 / 4;
+    public static void setLineColor(int color) {
+        CanvasAidUtils.mLineColor = color;
     }
 }
