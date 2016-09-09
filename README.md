@@ -40,7 +40,7 @@
 
 ## 文档
 
-* [点击这里查看文档](http://gcssloop.github.io/doc/viewsupport/cn/index.html)
+* [点击这里查看文档](https://jitpack.io/com/github/GcsSloop/ViewSupport/v1.2.2/javadoc)
 * [点击这里查看Wiki](https://github.com/GcsSloop/ViewSupport/wiki)
 
 ## 如何添加该开源库
@@ -64,7 +64,7 @@
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.2.0'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.2.2'
 	}
 ```
 
