@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 GcsSloop
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ GitHub :  https://github.com/GcsSloop
+  ~ Weibo  :  http://weibo,com/GcsSloop
+  ~ Blog     :  http://www.gcssloop.com
+  ~
+  ~ Last modify $2016-09-15 03:20:21
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	tools:context="com.gcssloop.test.viewsupport.TestRorate3dAnimationActivity">
+
+	<LinearLayout
+		android:id="@+id/ll"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:gravity="center"
+		android:layout_height="wrap_content">
+
+		<RadioGroup
+			android:id="@+id/group"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<RadioButton
+				android:checked="true"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/axis_x"
+				android:text="x"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<RadioButton
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/axis_y"
+				android:text="y"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<RadioButton
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:id="@+id/axis_z"
+				android:text="z"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+		</RadioGroup>
+		<Button
+			android:text="start"
+			android:id="@+id/btn_start"
+			android:layout_width="160dp"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_above="@id/ll"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.v7.widget.CardView
+			android:id="@+id/card"
+			card_view:cardElevation="10dp"
+			card_view:cardCornerRadius="5dp"
+			android:layout_margin="40dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<ImageView
+			android:layout_centerInParent="true"
+			android:src="@drawable/miao"
+			android:id="@+id/img"
+			android:scaleType="centerCrop"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+		</android.support.v7.widget.CardView>
+	</RelativeLayout>
+</RelativeLayout>
