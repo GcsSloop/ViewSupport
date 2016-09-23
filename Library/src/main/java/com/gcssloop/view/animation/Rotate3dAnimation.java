@@ -123,10 +123,10 @@ public class Rotate3dAnimation extends Animation {
 
         // 修复失真
         float[] mValues = new float[9];
-        matrix.getValues(mValues);            //获取数值
-        mValues[6] = mValues[6] / scale;        //数值修正
-        mValues[7] = mValues[7] / scale;        //数值修正
-        matrix.setValues(mValues);            //重新赋值
+        matrix.getValues(mValues);          //获取数值
+        mValues[6] = mValues[6] / scale;    //数值修正
+        mValues[7] = mValues[7] / scale;    //数值修正
+        matrix.setValues(mValues);          //重新赋值
 
         // 设置中心
         matrix.preTranslate(-mCenterX, -mCenterY);
