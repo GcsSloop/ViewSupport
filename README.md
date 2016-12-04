@@ -6,11 +6,13 @@
 
 ![](https://raw.githubusercontent.com/GcsSloop/ViewSupport/res/img/ViewSupport.png)
 
-该开源库主要作用为简化自定义View流程，例如，自定义View继承 `CustomView` 可以自动获取View大小和一个默认画笔。
+该开源库的主要作用就是简化自定义View过程中的一些流程，让自定义View更简单，更方便，更高效，例如：
 
-同时，它也提供了一些辅助工具，例如，可以绘制一个辅助坐标系的 `CanvasAidUtils`，拥有测量距离，角度弧度转换等功能的 `MathUtils`。
+* 继承 `CustomView` 以自动获取 View 大小以及默认画笔。
+* 使用 `CanvasAidUtils` 绘制当前坐标系以检查绘制的位置。
+* 使用 `MathUtils` 方便的进行角度弧度转换，计算距离。
 
-总而言之，这个开源库到作用就是为了优雅快速的制作自定义View，更多信息可以查看下面表格。
+除此之外，它还有更多的工具和辅助类来帮助你更方便的自定义View，更多信息请查看下面表格。
 
 如果你对此有什么比较好的建议，欢迎提交 Issues 来告诉我。
 
