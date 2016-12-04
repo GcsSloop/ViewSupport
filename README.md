@@ -4,9 +4,8 @@
 ![](https://img.shields.io/badge/Support-7%2B-green.svg)
 [![](https://jitpack.io/v/GcsSloop/ViewSupport.svg)](https://jitpack.io/#GcsSloop/ViewSupport)
 
-### 微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-该开源库主要作用为简化自定义View流程，例如，自定义View继承 `CusTomView` 可以自动获取View大小和一个默认画笔。
+该开源库主要作用为简化自定义View流程，例如，自定义View继承 `CustomView` 可以自动获取View大小和一个默认画笔。
 
 同时，它也提供了一些辅助工具，例如，可以绘制一个辅助坐标系的 `CanvasAidUtils`，拥有测量距离，角度弧度转换等功能的 `MathUtils`。
 
