@@ -4,6 +4,7 @@
 ![](https://img.shields.io/badge/Support-7%2B-green.svg)
 [![](https://jitpack.io/v/GcsSloop/ViewSupport.svg)](https://jitpack.io/#GcsSloop/ViewSupport)
 
+![](https://raw.githubusercontent.com/GcsSloop/ViewSupport/res/img/ViewSupport.png)
 
 该开源库主要作用为简化自定义View流程，例如，自定义View继承 `CustomView` 可以自动获取View大小和一个默认画笔。
 
