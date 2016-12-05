@@ -1,4 +1,4 @@
-# <img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f4v398j1v3j3074074t8w.jpg" width=32 /> ViewSupport
+# <img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f4v398j1v3j3074074t8w.jpg" width="32" /> ViewSupport
 
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ![](https://img.shields.io/badge/Support-7%2B-green.svg)
@@ -21,17 +21,18 @@
 ## 工具列表
 
 >
-**PS: 点击工具名称查看源码，点击Wiki查看简介。**
+>**PS: 点击工具名称查看源码，点击Wiki查看简介。**
 
-工具            | Wiki |简介
-----------------|------|----------------------------
-[CustomView](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/CustomView.java)                | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CustomView)     | 自定义View基类，帮助你节省部分代码
-[CanvasAidUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasAidUtils.java)  | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasAidUtils) | Canvas辅助工具，你可以用它绘制坐标系来帮助你检查视图的位置，并在完成之后移除该坐标系。
-[CanvasUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasUtils.java)        | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasUtils)    | Canvas绘图工具，封装了一些Canvas没有提供的方法，目前只能用来画一条线。
-[DensityUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/DensityUtils.java)      | [查看](https://github.com/GcsSloop/ViewSupport/wiki/DensityUtils)   | 密度工具， 根据设备进行如下单位转换: sp -> px, px -> sp, dp -> px, px -> dp
-[MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils)      | 数学工具， 封装一些数学算法，例如: 获取两点之间的距离，获取线段上某一点的位置， 获取线段与水平线夹角 等
-[ViewUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/ViewUtils.java)            | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ViewUtils)      | 视图工具， 封装了一些与视图相关等内容，如 手动测量视图大小， 为视图动态设置margin 等
-[ApiHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/ApiHelper.java)            | 查看      | 
+| 工具                                       | Wiki                                     | 简介                                       |
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| [CustomView](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/CustomView.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CustomView) | 自定义View基类，帮助你节省部分代码                      |
+| [CanvasAidUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasAidUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasAidUtils) | Canvas辅助工具，你可以用它绘制坐标系来帮助你检查视图的位置，并在完成之后移除该坐标系。 |
+| [CanvasUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/CanvasUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/CanvasUtils) | Canvas绘图工具，封装了一些Canvas没有提供的方法，目前只能用来画一条线。 |
+| [DensityUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/DensityUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/DensityUtils) | 密度工具， 根据设备进行如下单位转换: sp -> px, px -> sp, dp -> px, px -> dp |
+| [MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils) | 数学工具， 封装一些数学算法，例如: 获取两点之间的距离，获取线段上某一点的位置， 获取线段与水平线夹角 等 |
+| [ViewUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/ViewUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ViewUtils) | 视图工具， 封装了一些与视图相关等内容，如 手动测量视图大小， 为视图动态设置margin 等 |
+| [ApiHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/ApiHelper.java) | 查看                                       | 版本检查工具，里面定义了很多与版本相关的常量，并且开放了几个检查方法，检查一个类(class)是否拥有某个字段或者某个方法。 |
+| [MotionEventHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/MotionEventHelper.java) | 查看                                       | MotionEvent辅助类，帮助转换 MotionEvent 中的坐标系。   |
 
 ## 文档
 
