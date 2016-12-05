@@ -1,11 +1,11 @@
 /*
- * Copyright (c) 2016 GcsSloop
+ * Copyright 2016 GcsSloop
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * http://www.apache.org/licenses/LICENSE-2.0
+ *    http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,11 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * GitHub :  https://github.com/GcsSloop
- * Weibo  :  http://weibo,com/GcsSloop
- * Blog     :  http://www.gcssloop.com
+ * Last modified 2016-12-03 22:55:55
  *
- * Last modify $2016-09-09 21:38:09
  */
 
 package com.gcssloop.view.utils;
@@ -25,7 +22,7 @@ package com.gcssloop.view.utils;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Point;
+import android.graphics.PointF;
 
 public class CanvasAidUtils {
 
@@ -40,25 +37,25 @@ public class CanvasAidUtils {
 
 
     // 2D
-    private static int XAxisPosLen_2D = 500;   // X axis positive length
-    private static int XAxisNegLen_2D = 0;     // X axis negative length
-    private static int YAxisPosLen_2D = 700;   // Y axis positive length
-    private static int YAxisNegLen_2D = 0;     // Y axis negative length
+    private static float XAxisPosLen_2D = 500;   // X axis positive length
+    private static float XAxisNegLen_2D = 0;     // X axis negative length
+    private static float YAxisPosLen_2D = 700;   // Y axis positive length
+    private static float YAxisNegLen_2D = 0;     // Y axis negative length
 
-    private static Point XHead_2D, XTail_2D, YHead_2D, YTail_2D;
-    private static Point XCap1_2D, XCap2_2D, YCap1_2D, YCap2_2D;
+    private static PointF XHead_2D, XTail_2D, YHead_2D, YTail_2D;
+    private static PointF XCap1_2D, XCap2_2D, YCap1_2D, YCap2_2D;
 
 
     // 3D
-    private static int XAxisPosLen_3D = 400;   // X axis positive length
-    private static int XAxisNegLen_3D = 400;   // X axis negative length
-    private static int YAxisPosLen_3D = 500;   // Y axis positive length
-    private static int YAxisNegLen_3D = 500;   // Y axis negative length
-    private static int ZAxisPosLen_3D = 300;   // Z axis positive length
-    private static int ZAxisNegLen_3D = 400;   // Z axis negative length
+    private static float XAxisPosLen_3D = 400;   // X axis positive length
+    private static float XAxisNegLen_3D = 400;   // X axis negative length
+    private static float YAxisPosLen_3D = 500;   // Y axis positive length
+    private static float YAxisNegLen_3D = 500;   // Y axis negative length
+    private static float ZAxisPosLen_3D = 300;   // Z axis positive length
+    private static float ZAxisNegLen_3D = 400;   // Z axis negative length
 
-    private static Point XHead_3D, XTail_3D, YHead_3D, YTail_3D, ZHead_3D, ZTail_3D;
-    private static Point XCap1_3D, XCap2_3D, YCap1_3D, YCap2_3D, ZCap1_3D, ZCap2_3D;
+    private static PointF XHead_3D, XTail_3D, YHead_3D, YTail_3D, ZHead_3D, ZTail_3D;
+    private static PointF XCap1_3D, XCap2_3D, YCap1_3D, YCap2_3D, ZCap1_3D, ZCap2_3D;
 
 
     private CanvasAidUtils() {
@@ -128,40 +125,40 @@ public class CanvasAidUtils {
 
     private static void init2DPoint() {
 
-        XHead_2D = new Point(+XAxisPosLen_2D, 0);
-        XTail_2D = new Point(-XAxisNegLen_2D, 0);
-        XCap1_2D = new Point(XAxisPosLen_2D - Cap_Head_Distance, +Cap_Axis_Distance);
-        XCap2_2D = new Point(XAxisPosLen_2D - Cap_Head_Distance, -Cap_Axis_Distance);
+        XHead_2D = new PointF(+XAxisPosLen_2D, 0);
+        XTail_2D = new PointF(-XAxisNegLen_2D, 0);
+        XCap1_2D = new PointF(XAxisPosLen_2D - Cap_Head_Distance, +Cap_Axis_Distance);
+        XCap2_2D = new PointF(XAxisPosLen_2D - Cap_Head_Distance, -Cap_Axis_Distance);
 
-        YHead_2D = new Point(0, +YAxisPosLen_2D);
-        YTail_2D = new Point(0, -YAxisNegLen_2D);
-        YCap1_2D = new Point(+Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
-        YCap2_2D = new Point(-Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
+        YHead_2D = new PointF(0, +YAxisPosLen_2D);
+        YTail_2D = new PointF(0, -YAxisNegLen_2D);
+        YCap1_2D = new PointF(+Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
+        YCap2_2D = new PointF(-Cap_Axis_Distance, YAxisPosLen_2D - Cap_Head_Distance);
     }
 
     private static void init3DPoint() {
 
-        XHead_3D = new Point(+XAxisPosLen_3D, 0);
-        XTail_3D = new Point(-XAxisNegLen_3D, 0);
-        XCap1_3D = new Point(XAxisPosLen_3D - Cap_Head_Distance, +Cap_Axis_Distance);
-        XCap2_3D = new Point(XAxisPosLen_3D - Cap_Head_Distance, -Cap_Axis_Distance);
+        XHead_3D = new PointF(+XAxisPosLen_3D, 0);
+        XTail_3D = new PointF(-XAxisNegLen_3D, 0);
+        XCap1_3D = new PointF(XAxisPosLen_3D - Cap_Head_Distance, +Cap_Axis_Distance);
+        XCap2_3D = new PointF(XAxisPosLen_3D - Cap_Head_Distance, -Cap_Axis_Distance);
 
-        YHead_3D = new Point(0, -YAxisPosLen_3D);
-        YTail_3D = new Point(0, +YAxisNegLen_3D);
-        YCap1_3D = new Point(+Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
-        YCap2_3D = new Point(-Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
+        YHead_3D = new PointF(0, -YAxisPosLen_3D);
+        YTail_3D = new PointF(0, +YAxisNegLen_3D);
+        YCap1_3D = new PointF(+Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
+        YCap2_3D = new PointF(-Cap_Axis_Distance, -YAxisPosLen_3D + Cap_Head_Distance);
 
-        int zl = convert_3D_to_2D(ZAxisPosLen_3D);
-        int nzl = convert_3D_to_2D(ZAxisNegLen_3D);
-        int CAD = convert_3D_to_2D(Cap_Axis_Distance);
-        int CHD = convert_3D_to_2D(Cap_Head_Distance);
-        ZHead_3D = new Point(zl, -zl);
-        ZTail_3D = new Point(-nzl, nzl);
-        ZCap1_3D = new Point(ZHead_3D.x - CHD - CAD, ZHead_3D.y + CHD - CAD);
-        ZCap2_3D = new Point(ZHead_3D.x - CHD + CAD, ZHead_3D.y + CHD + CAD);
+        float zl = convert_3D_to_2D(ZAxisPosLen_3D);
+        float nzl = convert_3D_to_2D(ZAxisNegLen_3D);
+        float CAD = convert_3D_to_2D(Cap_Axis_Distance);
+        float CHD = convert_3D_to_2D(Cap_Head_Distance);
+        ZHead_3D = new PointF(zl, -zl);
+        ZTail_3D = new PointF(-nzl, nzl);
+        ZCap1_3D = new PointF(ZHead_3D.x - CHD - CAD, ZHead_3D.y + CHD - CAD);
+        ZCap2_3D = new PointF(ZHead_3D.x - CHD + CAD, ZHead_3D.y + CHD + CAD);
     }
 
-    private static int convert_3D_to_2D(int l) {
+    private static float convert_3D_to_2D(float l) {
         return l * 3 / 4;
     }
 
@@ -180,9 +177,9 @@ public class CanvasAidUtils {
      * @param lenX x axis length
      * @param lenY y axis length
      */
-    public static void set2DAxisLength(int lenX, int lenY) {
-        XAxisPosLen_2D = XAxisNegLen_2D = lenX / 2;
-        YAxisPosLen_2D = YAxisNegLen_2D = lenY / 2;
+    public static void set2DAxisLength(float lenX, float lenY) {
+        XAxisPosLen_2D = XAxisNegLen_2D = lenX;
+        YAxisPosLen_2D = YAxisNegLen_2D = lenY;
     }
 
     /**
@@ -193,7 +190,7 @@ public class CanvasAidUtils {
      * @param lenPY y axis positive length
      * @param lenNY y axis negative length
      */
-    public static void set2DAxisLength(int lenPX, int lenNX, int lenPY, int lenNY) {
+    public static void set2DAxisLength(float lenPX, float lenNX, float lenPY, float lenNY) {
         XAxisPosLen_2D = lenPX;
         YAxisPosLen_2D = lenPY;
         XAxisNegLen_2D = lenNX;
@@ -207,10 +204,10 @@ public class CanvasAidUtils {
      * @param lenY y axis length
      * @param lenZ z axis length
      */
-    public static void set3DAxisLength(int lenX, int lenY, int lenZ) {
-        XAxisPosLen_3D = XAxisNegLen_3D = lenX / 2;
-        YAxisPosLen_3D = YAxisNegLen_3D = lenY / 2;
-        ZAxisPosLen_3D = ZAxisNegLen_3D = lenZ / 2;
+    public static void set3DAxisLength(float lenX, float lenY, float lenZ) {
+        XAxisPosLen_3D = XAxisNegLen_3D = lenX;
+        YAxisPosLen_3D = YAxisNegLen_3D = lenY;
+        ZAxisPosLen_3D = ZAxisNegLen_3D = lenZ;
     }
 
     /**
@@ -223,7 +220,7 @@ public class CanvasAidUtils {
      * @param lenPZ z axis positive length
      * @param lenNZ z axis negative length
      */
-    public static void set3DAxisLength(int lenPX, int lenNX, int lenPY, int lenNY, int lenPZ, int lenNZ) {
+    public static void set3DAxisLength(float lenPX, float lenNX, float lenPY, float lenNY, float lenPZ, float lenNZ) {
         XAxisPosLen_3D = lenPX;
         YAxisPosLen_3D = lenPY;
         ZAxisPosLen_3D = lenPZ;

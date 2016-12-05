@@ -14,7 +14,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   ~
-  ~ Last modified 2016-12-03 22:55:54
+  ~ Last modified 2016-12-04 04:12:32
   ~
   -->
 
@@ -27,19 +27,16 @@
 	android:paddingLeft="@dimen/activity_horizontal_margin"
 	android:paddingRight="@dimen/activity_horizontal_margin"
 	android:paddingTop="@dimen/activity_vertical_margin"
+	android:gravity="center"
 	tools:context="com.gcssloop.test.viewsupport.TestCustomViewActivity">
 
 	<TextView
+		android:gravity="center"
 		android:id="@+id/custom_view_text"
 		android:padding="10dp"
 		android:textSize="16sp"
-		android:text="自定义View继承自CustomView可以获得一个默认的画笔,上下文和View宽高"
+		android:text="请到 Logcat 中查看日志信息。"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"/>
-
-	<com.gcssloop.viewsupporttest.TestCustomViewActivity.MyView
-		android:layout_below="@+id/custom_view_text"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"/>
 
 </RelativeLayout>

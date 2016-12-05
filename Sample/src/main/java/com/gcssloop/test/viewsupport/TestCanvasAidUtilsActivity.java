@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Last modified 2016-12-03 22:55:55
+ * Last modified 2016-12-05 23:34:36
  *
  */
 
@@ -21,37 +21,40 @@ package com.gcssloop.test.viewsupport;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 
 import com.gcssloop.test.base.BaseActivity;
 import com.gcssloop.view.CustomView;
+import com.gcssloop.view.utils.CanvasAidUtils;
 
-public class TestCustomViewActivity extends BaseActivity {
+public class TestCanvasAidUtilsActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new MyView(this));
+        setContentView(new TestCanvasAidUtilsView(this));
+    }
+}
+
+class TestCanvasAidUtilsView extends CustomView {
+
+    public TestCanvasAidUtilsView(Context context) {
+        super(context);
+
     }
 
-    public class MyView extends CustomView{
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
 
-        public MyView(Context context) {
-            super(context);
-            mDeafultPaint.setColor(Color.GRAY);             // 获得一个默认的画笔
-            mDeafultPaint.setTextSize(42);
-            mDeafultPaint.setTextAlign(Paint.Align.CENTER);
-        }
+        // 平移坐标系
+        canvas.translate(mViewWidth/2, mViewHeight/2);
 
-        @Override
-        protected void onDraw(Canvas canvas) {
-            canvas.translate(mViewWidth/2,mViewHeight/2);   // 获得视图宽高
+        // 重置坐标轴长度
+        CanvasAidUtils.set2DAxisLength(mViewWidth/2*0.8f, mViewHeight/2*0.8f);
 
-            canvas.drawCircle(0, -100, 100, mDeafultPaint);
-            canvas.drawText("用默认画笔绘制一个圆", 0, 60, mDeafultPaint);
-        }
+        // 绘制辅助坐标系
+        CanvasAidUtils.draw2DCoordinateSpace(canvas);
     }
-
 }
