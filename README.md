@@ -45,7 +45,7 @@
 [点击此处下载 Sample](https://github.com/GcsSloop/ViewSupport/raw/res/apk/Sample-ViewSupport.apk)
 
 <img src="http://ww1.sinaimg.cn/large/006y8lVagw1fagg3b8rxyj31ay27djyc.jpg" width="300" />
-<img src="http://ww1.sinaimg.cn/large/006y8lVagw1fagg4lvzvxj31ay27dqa2.jpg" width="300" />
+<img src="http://ww4.sinaimg.cn/large/006y8lVagw1faggpir90tj31ay27dqa2.jpg" width="300" />
 
 ## 如何添加该开源库
 
