@@ -40,13 +40,12 @@
 * [点击这里查看Wiki](https://github.com/GcsSloop/ViewSupport/wiki)
 * [点击这里查看更新日志](https://github.com/GcsSloop/ViewSupport/releases)
 
-## 主要功能
+## 示例
 
-封装一些与视图相关的工具类和辅助工具类，让自定义View更加优雅便捷。
+[点击此处下载 Sample]()
 
-例如绘制一个辅助的坐标系帮助检查视图位置：
-
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f4i5aypzo9j30dw0nhmxt.jpg" width=300 />
+<img src="http://ww1.sinaimg.cn/large/006y8lVagw1fagg3b8rxyj31ay27djyc.jpg" width="300" />
+<img src="http://ww1.sinaimg.cn/large/006y8lVagw1fagg4lvzvxj31ay27dqa2.jpg" width="300" />
 
 ## 如何添加该开源库
 
