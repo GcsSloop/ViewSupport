@@ -18,14 +18,6 @@
 
 *****
 
-## 主要功能
-
-封装一些与视图相关的工具类和辅助工具类，让自定义View更加优雅便捷。
-
-例如绘制一个辅助的坐标系帮助检查视图位置：
-
-<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f4i5aypzo9j30dw0nhmxt.jpg" width=300 />
-
 ## 工具列表
 
 >
@@ -44,6 +36,14 @@
 
 * [点击这里查看文档](https://jitpack.io/com/github/GcsSloop/ViewSupport/v1.2.2/javadoc/)
 * [点击这里查看Wiki](https://github.com/GcsSloop/ViewSupport/wiki)
+
+## 主要功能
+
+封装一些与视图相关的工具类和辅助工具类，让自定义View更加优雅便捷。
+
+例如绘制一个辅助的坐标系帮助检查视图位置：
+
+<img src="http://ww4.sinaimg.cn/large/005Xtdi2jw1f4i5aypzo9j30dw0nhmxt.jpg" width=300 />
 
 ## 如何添加该开源库
 
