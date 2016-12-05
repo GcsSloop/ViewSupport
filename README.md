@@ -31,8 +31,8 @@
 | [DensityUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/DensityUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/DensityUtils) | 密度工具， 根据设备进行如下单位转换: sp -> px, px -> sp, dp -> px, px -> dp |
 | [MathUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/MathUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MathUtils) | 数学工具， 封装一些数学算法，例如: 获取两点之间的距离，获取线段上某一点的位置， 获取线段与水平线夹角 等 |
 | [ViewUtils](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/utils/ViewUtils.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ViewUtils) | 视图工具， 封装了一些与视图相关等内容，如 手动测量视图大小， 为视图动态设置margin 等 |
-| [ApiHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/ApiHelper.java) | 查看                                       | 版本检查工具，里面定义了很多与版本相关的常量，并且开放了几个检查方法，检查一个类(class)是否拥有某个字段或者某个方法。 |
-| [MotionEventHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/MotionEventHelper.java) | 查看                                       | MotionEvent辅助类，帮助转换 MotionEvent 中的坐标系。   |
+| [ApiHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/ApiHelper.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/ApiHelper) | 版本检查工具，里面定义了很多与版本相关的常量，并且开放了几个检查方法，检查一个类(class)是否拥有某个字段或者某个方法。 |
+| [MotionEventHelper](https://github.com/GcsSloop/ViewSupport/blob/master/Library/src/main/java/com/gcssloop/view/helper/MotionEventHelper.java) | [查看](https://github.com/GcsSloop/ViewSupport/wiki/MotionEventHelper) | MotionEvent辅助类，帮助转换 MotionEvent 中的坐标系。   |
 
 ## 文档
 
