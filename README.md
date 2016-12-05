@@ -36,6 +36,7 @@
 
 * [点击这里查看文档](https://jitpack.io/com/github/GcsSloop/ViewSupport/v1.2.2/javadoc/)
 * [点击这里查看Wiki](https://github.com/GcsSloop/ViewSupport/wiki)
+* [点击这里查看更新日志](https://github.com/GcsSloop/ViewSupport/releases)
 
 ## 主要功能
 
