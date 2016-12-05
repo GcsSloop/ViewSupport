@@ -68,7 +68,7 @@
 
 ``` gradle
 	dependencies {
-	        compile 'com.github.GcsSloop:ViewSupport:v1.2.2'
+	        compile 'com.github.GcsSloop:ViewSupport:v1.3.0'
 	}
 ```
 
@@ -76,7 +76,7 @@
 
 ### 微博: [@GcsSloop](http://weibo.com/GcsSloop)
 
-<a href="https://github.com/GcsSloop/README/blob/master/README.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width=300 height=100 /> </a>
+<a href="https://github.com/GcsSloop/README/blob/master/README.md" target="_blank"> <img src="http://ww4.sinaimg.cn/large/005Xtdi2gw1f1qn89ihu3j315o0dwwjc.jpg" width="300" height="100" /> </a>
 
 ## License
 
