@@ -1,8 +1,10 @@
-# <img src="http://ww2.sinaimg.cn/large/005Xtdi2jw1f4v398j1v3j3074074t8w.jpg" width="32" /> ViewSupport
+<h1 align="center">ViewSupport</h1>
 
-[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![](https://img.shields.io/badge/Support-9%2B-green.svg)
-[![](https://jitpack.io/v/GcsSloop/ViewSupport.svg)](https://jitpack.io/#GcsSloop/ViewSupport)
+<p align="center">
+<a href="https://www.apache.org/licenses/LICENSE-2.0"> <img src="https://img.shields.io/badge/license-Apache%202-green.svg" /></a>
+<a href="#"> <img src="https://img.shields.io/badge/Support-9%2B-green.svg" /></a>
+<a href="https://jitpack.io/#GcsSloop/ViewSupport"> <img src="https://jitpack.io/v/GcsSloop/ViewSupport.svg" /></a>
+</p>
 
 ![](https://raw.githubusercontent.com/GcsSloop/ViewSupport/res/img/ViewSupport.png)
 
